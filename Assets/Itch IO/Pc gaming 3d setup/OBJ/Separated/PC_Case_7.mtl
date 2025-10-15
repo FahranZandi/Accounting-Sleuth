@@ -1,0 +1,32 @@
+# Blender 3.6.2 MTL File: 'Gaming Set.blend'
+# www.blender.org
+
+newmtl RGB
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.039558 0.297551 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.150659 0.724580 2.057876
+Ni 1.450000
+d 1.000000
+illum 2
+
+newmtl acc_textures
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 2
+map_Kd D:/Documents N/Blender 2.8/2023/Gamin Set/Textures/textures_A_alter.png
+map_d D:/Documents N/Blender 2.8/2023/Gamin Set/Textures/textures_A_alter.png
+
+newmtl palette
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd D:/Documents N/Blender 2.8/2023/Gamin Set/Textures/palette1.png
