@@ -3,7 +3,17 @@ guid: c88d89c2a7aad534981433ee9462f521
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jendela
+    second: {fileID: 2100000, guid: bc40dcfe6156c32428c9129b9a8279e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jendela.003
+    second: {fileID: 2100000, guid: 071c5a5d0ae13a2439de75bcbdaba376, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

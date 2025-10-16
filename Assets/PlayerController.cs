@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 5f;
     public float groundDist = 0.2f; // jarak raycast ke bawah
     public float fallMultiplier = 2f; // multiplier biar jatuh lebih natural
+    public float jumpForce = 5f; // ➤ Tambahan lompat
 
     [Header("References")]
     public LayerMask terrainLayer;
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
     {
         CheckGround();
         HandleMovement();
+        HandleJump(); // ➤ Tambahan lompat
         HandleAnimation();
         ApplyExtraGravity();
     }
@@ -61,6 +63,16 @@ public class PlayerController : MonoBehaviour
         // Flip sprite sesuai arah
         if (xInput < 0) sr.flipX = true;
         else if (xInput > 0) sr.flipX = false;
+    }
+
+    // ➤ Tambahan lompat
+    private void HandleJump()
+    {
+        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z); // reset vertical velocity dulu
+            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        }
     }
 
     private void ApplyExtraGravity()
