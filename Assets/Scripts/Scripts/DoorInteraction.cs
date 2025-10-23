@@ -1,25 +1,19 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;  // gunakan TextMeshPro langsung
+using TMPro;
 
 public class DoorInteraction : MonoBehaviour
 {
     [Header("References")]
-    public Transform player;             // Drag Player di sini
-    public GameObject interactUI;        // Drag Canvas (World Space) panel root
-    public TextMeshProUGUI option1Text;  // Drag Text TMP untuk "Masuk"
-    public TextMeshProUGUI option2Text;  // Drag Text TMP untuk "Batal"
+    public GameObject interactUI;        // drag Canvas (child dari door)
+    public TextMeshProUGUI option1Text;  // drag TMP text "Masuk"
+    public TextMeshProUGUI option2Text;  // drag TMP text "Batal"
 
-    [Header("Interaction")]
-    public float interactionDistance = 3f;
-
-    [Header("Scene (assign in Editor)")]
+    [Header("Scene Settings")]
     public string targetSceneName = "";
 
 #if UNITY_EDITOR
-    // Memudahkan assign scene lewat drag & drop (editor only)
     [SerializeField] private UnityEditor.SceneAsset sceneAsset;
-
     private void OnValidate()
     {
         if (sceneAsset != null)
@@ -27,102 +21,107 @@ public class DoorInteraction : MonoBehaviour
     }
 #endif
 
-    private int selectedIndex = 0; // 0 = Masuk, 1 = Batal
+    private Transform player;
+    private int selectedIndex = 0;
     private bool isNearby = false;
 
-    void Start()
+    private void Start()
     {
         if (interactUI != null)
             interactUI.SetActive(false);
         UpdateUI();
     }
 
-    void Update()
+    private void Update()
     {
-        if (player == null) return;
+        if (!isNearby || player == null) return;
 
-        float dist = Vector3.Distance(player.position, transform.position);
+        HandleInput();
+        FaceUIToCamera();
+    }
 
-        if (dist <= interactionDistance)
+    private void OnTriggerEnter(Collider other)
+    {
+        // Debug bantu cek apakah trigger bekerja
+        Debug.Log("Trigger Enter: " + other.name);
+
+        if (other.CompareTag("Player"))
         {
-            if (!isNearby)
-            {
-                isNearby = true;
-                if (interactUI != null)
-                    interactUI.SetActive(true);
-                UpdateUI();
-            }
+            player = other.transform;
+            isNearby = true;
 
-            HandleInput();
-
-            // opsional: agar UI selalu menghadap kamera
             if (interactUI != null)
-                FaceUIToCamera();
-        }
-        else
-        {
-            if (isNearby)
-            {
-                isNearby = false;
-                if (interactUI != null)
-                    interactUI.SetActive(false);
-            }
+                interactUI.SetActive(true);
+
+            UpdateUI();
         }
     }
 
-    void HandleInput()
+    private void OnTriggerExit(Collider other)
     {
-        // Scroll atau panah atas/bawah untuk ganti pilihan
-        float scroll = Input.GetAxis("Mouse ScrollWheel");
-        if (scroll > 0f || Input.GetKeyDown(KeyCode.UpArrow))
+        Debug.Log("Trigger Exit: " + other.name);
+
+        if (other.CompareTag("Player"))
+        {
+            isNearby = false;
+            player = null;
+
+            if (interactUI != null)
+                interactUI.SetActive(false);
+        }
+    }
+
+    private void HandleInput()
+    {
+        // Ganti pilihan dengan scroll atau panah
+        if (Input.GetAxis("Mouse ScrollWheel") > 0f || Input.GetKeyDown(KeyCode.UpArrow))
         {
             selectedIndex = (selectedIndex - 1 + 2) % 2;
             UpdateUI();
         }
-        else if (scroll < 0f || Input.GetKeyDown(KeyCode.DownArrow))
+        else if (Input.GetAxis("Mouse ScrollWheel") < 0f || Input.GetKeyDown(KeyCode.DownArrow))
         {
             selectedIndex = (selectedIndex + 1) % 2;
             UpdateUI();
         }
 
-        // Enter untuk konfirmasi
+        // Konfirmasi pilihan
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
-            if (selectedIndex == 0) // Masuk
+            if (selectedIndex == 0)
             {
-                if (!string.IsNullOrEmpty(targetSceneName))
-                {
+                // Masuk ke scene target
+                if (Application.CanStreamedLevelBeLoaded(targetSceneName))
                     SceneManager.LoadScene(targetSceneName);
-                }
                 else
-                {
-                    Debug.LogWarning("Target scene name kosong. Set targetSceneName di Inspector ya, Onii-chan!");
-                }
+                    Debug.LogError($"Scene '{targetSceneName}' belum ditambahkan ke Build Settings!");
             }
-            else // Batal
+            else
             {
-                if (interactUI != null)
-                    interactUI.SetActive(false);
+                // Batal
+                interactUI.SetActive(false);
                 isNearby = false;
             }
         }
     }
 
-    void UpdateUI()
+    private void UpdateUI()
     {
         if (option1Text != null)
             option1Text.text = (selectedIndex == 0 ? "> Masuk" : "  Masuk");
+
         if (option2Text != null)
             option2Text.text = (selectedIndex == 1 ? "> Batal" : "  Batal");
     }
 
-    void FaceUIToCamera()
+    private void FaceUIToCamera()
     {
-        Transform uiT = interactUI.transform;
+        if (interactUI == null) return;
+
         Camera cam = Camera.main;
         if (cam == null) return;
 
-        Vector3 dir = uiT.position - cam.transform.position;
-        uiT.rotation = Quaternion.LookRotation(dir);
+        Vector3 dir = interactUI.transform.position - cam.transform.position;
+        interactUI.transform.rotation = Quaternion.LookRotation(dir);
     }
 }
