@@ -2,12 +2,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+[RequireComponent(typeof(Collider))]
 public class DoorInteraction : MonoBehaviour
 {
     [Header("References")]
-    public GameObject interactUI;        // drag Canvas (child dari door)
-    public TextMeshProUGUI option1Text;  // drag TMP text "Masuk"
-    public TextMeshProUGUI option2Text;  // drag TMP text "Batal"
+    public GameObject interactUI;        // Drag Canvas (child dari door)
+    public TextMeshProUGUI option1Text;  // Drag TMP text "Masuk"
+    public TextMeshProUGUI option2Text;  // Drag TMP text "Batal"
 
     [Header("Scene Settings")]
     public string targetSceneName = "";
@@ -24,12 +25,40 @@ public class DoorInteraction : MonoBehaviour
     private Transform player;
     private int selectedIndex = 0;
     private bool isNearby = false;
+    private Collider triggerZone;
 
     private void Start()
     {
+        triggerZone = GetComponent<Collider>();
+
+        if (triggerZone == null)
+        {
+            Debug.LogError($"[DoorInteraction] Tidak ada Collider di {name}! Tambahkan collider dan centang IsTrigger!");
+            return;
+        }
+
+        if (!triggerZone.isTrigger)
+        {
+            triggerZone.isTrigger = true;
+            Debug.LogWarning($"[DoorInteraction] Collider di {name} belum di-set sebagai Trigger, sekarang diaktifkan otomatis!");
+        }
+
         if (interactUI != null)
             interactUI.SetActive(false);
+
         UpdateUI();
+
+        // Cek player yang mungkin sudah berada di dalam trigger sejak awal
+        Collider[] hits = Physics.OverlapBox(triggerZone.bounds.center, triggerZone.bounds.extents);
+        foreach (var hit in hits)
+        {
+            if (hit.CompareTag("Player"))
+            {
+                Debug.Log("[DoorInteraction] Player sudah di dalam area saat Start()");
+                OnTriggerEnter(hit);
+                break;
+            }
+        }
     }
 
     private void Update()
@@ -42,16 +71,18 @@ public class DoorInteraction : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Debug bantu cek apakah trigger bekerja
-        Debug.Log("Trigger Enter: " + other.name);
-
+        if (!enabled) return;
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Trigger Enter: " + other.name);
             player = other.transform;
             isNearby = true;
 
             if (interactUI != null)
+            {
                 interactUI.SetActive(true);
+                Debug.Log("UI AKTIF!");
+            }
 
             UpdateUI();
         }
@@ -59,6 +90,7 @@ public class DoorInteraction : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        if (!enabled) return;
         Debug.Log("Trigger Exit: " + other.name);
 
         if (other.CompareTag("Player"))
@@ -73,7 +105,6 @@ public class DoorInteraction : MonoBehaviour
 
     private void HandleInput()
     {
-        // Ganti pilihan dengan scroll atau panah
         if (Input.GetAxis("Mouse ScrollWheel") > 0f || Input.GetKeyDown(KeyCode.UpArrow))
         {
             selectedIndex = (selectedIndex - 1 + 2) % 2;
@@ -85,12 +116,10 @@ public class DoorInteraction : MonoBehaviour
             UpdateUI();
         }
 
-        // Konfirmasi pilihan
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
             if (selectedIndex == 0)
             {
-                // Masuk ke scene target
                 if (Application.CanStreamedLevelBeLoaded(targetSceneName))
                     SceneManager.LoadScene(targetSceneName);
                 else
@@ -98,7 +127,6 @@ public class DoorInteraction : MonoBehaviour
             }
             else
             {
-                // Batal
                 interactUI.SetActive(false);
                 isNearby = false;
             }
@@ -109,7 +137,6 @@ public class DoorInteraction : MonoBehaviour
     {
         if (option1Text != null)
             option1Text.text = (selectedIndex == 0 ? "> Masuk" : "  Masuk");
-
         if (option2Text != null)
             option2Text.text = (selectedIndex == 1 ? "> Batal" : "  Batal");
     }
@@ -117,7 +144,6 @@ public class DoorInteraction : MonoBehaviour
     private void FaceUIToCamera()
     {
         if (interactUI == null) return;
-
         Camera cam = Camera.main;
         if (cam == null) return;
 
