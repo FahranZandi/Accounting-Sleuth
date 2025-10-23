@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Map/Sekolah/Ruangan/Kelas 1/Kelas1.unity
     guid: 8ca52caa50a2eb34ebfb9ca300a37e5d
+  - enabled: 1
+    path: Assets/Map/Rumah/kamar/Ruang kamar.unity
+    guid: 1b7637fb95095aa41858b5e254317636
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 7590badd002c7da418abb74addfa3eb7, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
