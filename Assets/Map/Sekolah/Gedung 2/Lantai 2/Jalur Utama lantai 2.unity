@@ -331,8 +331,8 @@ MonoBehaviour:
   interactUI: {fileID: 91365606}
   option1Text: {fileID: 91365605}
   option2Text: {fileID: 91365604}
-  targetSceneName: Ruang kamar
-  sceneAsset: {fileID: 102900000, guid: 1b7637fb95095aa41858b5e254317636, type: 3}
+  targetSceneName: Kelas2
+  sceneAsset: {fileID: 102900000, guid: 656eed0438d72804bb40fa7e5d650b92, type: 3}
 --- !u!65 &71484183
 BoxCollider:
   m_ObjectHideFlags: 0
