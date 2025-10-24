@@ -332,7 +332,7 @@ MonoBehaviour:
   option1Text: {fileID: 91365605}
   option2Text: {fileID: 91365604}
   targetSceneName: Kelas2
-  sceneAsset: {fileID: 102900000, guid: 656eed0438d72804bb40fa7e5d650b92, type: 3}
+  sceneAsset: {fileID: 102900000, guid: 6e850f807fbdd2b45be15d6e7432ed30, type: 3}
 --- !u!65 &71484183
 BoxCollider:
   m_ObjectHideFlags: 0
