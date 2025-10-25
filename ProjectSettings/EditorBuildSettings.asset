@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Map/Sekolah/Gedung 2/Lantai 2/Jalur Utama lantai 2.unity
     guid: 570a979a46a7b1e4fb292a2e3a761102
+  - enabled: 1
+    path: Assets/Map/Sekolah/Ruangan/Kelas 2/Kelas2.unity
+    guid: 6e850f807fbdd2b45be15d6e7432ed30
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 7590badd002c7da418abb74addfa3eb7, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
