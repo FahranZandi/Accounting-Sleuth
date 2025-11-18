@@ -368,6 +368,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &28040690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 28040691}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &28040691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28040690}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0, y: 0, z: 1.14}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 890367626}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &38002854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -868,6 +899,51 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d055c194b27cd4b4e9a16d57ba9ea58c, type: 3}
   m_PrefabInstance: {fileID: 115502608}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &125838031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 125838033}
+  - component: {fileID: 125838032}
+  m_Layer: 0
+  m_Name: GameManagerObj
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &125838032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125838031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a3b537d9f6ea24a93a5b69c7c1105a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  lastDoorID: 
+--- !u!4 &125838033
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125838031}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.14708, y: 8.32704, z: -33.43693}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &128588246
 GameObject:
   m_ObjectHideFlags: 0
@@ -6259,7 +6335,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1d91f5b39a67ef142877fa7f61d82407, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 28040691}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1d91f5b39a67ef142877fa7f61d82407, type: 3}
       insertIndex: -1
@@ -6267,6 +6346,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1d91f5b39a67ef142877fa7f61d82407, type: 3}
       insertIndex: -1
       addedObject: {fileID: 890367625}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1d91f5b39a67ef142877fa7f61d82407, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 890367627}
   m_SourcePrefab: {fileID: 100100000, guid: 1d91f5b39a67ef142877fa7f61d82407, type: 3}
 --- !u!1 &777605538
 GameObject:
@@ -7340,14 +7422,39 @@ MonoBehaviour:
   m_GameObject: {fileID: 890367623}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94f7af3555059a04b9f7bffe09dddba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoorSpawn
+  doorID: R1_Left
+  spawnPoint: {fileID: 28040691}
+--- !u!4 &890367626 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1d91f5b39a67ef142877fa7f61d82407, type: 3}
+  m_PrefabInstance: {fileID: 773821799}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &890367627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890367623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6c458576ecee244287ad59aea2ea7c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorInteraction
-  interactUI: {fileID: 1289321423}
+  interactUI: {fileID: 901690864}
   option1Text: {fileID: 24259913}
   option2Text: {fileID: 971909598}
   targetSceneName: Jalur Utama lantai 2
+  doorID: R2_Left
   sceneAsset: {fileID: 102900000, guid: 570a979a46a7b1e4fb292a2e3a761102, type: 3}
+--- !u!1 &901690864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6215525254196284726, guid: 5a9cb81e5b83fd746b66719dc093f319, type: 3}
+  m_PrefabInstance: {fileID: 2116657057}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &945504099
 GameObject:
   m_ObjectHideFlags: 0
@@ -11136,11 +11243,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1289321423 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1780896313656190690, guid: 5a9cb81e5b83fd746b66719dc093f319, type: 3}
-  m_PrefabInstance: {fileID: 2116657057}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1295132018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18405,3 +18507,4 @@ SceneRoots:
   - {fileID: 2116657057}
   - {fileID: 773821799}
   - {fileID: 1254058333}
+  - {fileID: 125838033}

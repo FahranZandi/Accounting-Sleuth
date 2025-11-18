@@ -6,12 +6,15 @@ using TMPro;
 public class DoorInteraction : MonoBehaviour
 {
     [Header("References")]
-    public GameObject interactUI;        // Drag Canvas (child dari door)
-    public TextMeshProUGUI option1Text;  // Drag TMP text "Masuk"
-    public TextMeshProUGUI option2Text;  // Drag TMP text "Batal"
+    public GameObject interactUI;
+    public TextMeshProUGUI option1Text;
+    public TextMeshProUGUI option2Text;
 
     [Header("Scene Settings")]
     public string targetSceneName = "";
+
+    [Header("Door Settings")]
+    public string doorID = "";
 
 #if UNITY_EDITOR
     [SerializeField] private UnityEditor.SceneAsset sceneAsset;
@@ -31,34 +34,13 @@ public class DoorInteraction : MonoBehaviour
     {
         triggerZone = GetComponent<Collider>();
 
-        if (triggerZone == null)
-        {
-            Debug.LogError($"[DoorInteraction] Tidak ada Collider di {name}! Tambahkan collider dan centang IsTrigger!");
-            return;
-        }
-
         if (!triggerZone.isTrigger)
-        {
             triggerZone.isTrigger = true;
-            Debug.LogWarning($"[DoorInteraction] Collider di {name} belum di-set sebagai Trigger, sekarang diaktifkan otomatis!");
-        }
 
         if (interactUI != null)
             interactUI.SetActive(false);
 
         UpdateUI();
-
-        // Cek player yang mungkin sudah berada di dalam trigger sejak awal
-        Collider[] hits = Physics.OverlapBox(triggerZone.bounds.center, triggerZone.bounds.extents);
-        foreach (var hit in hits)
-        {
-            if (hit.CompareTag("Player"))
-            {
-                Debug.Log("[DoorInteraction] Player sudah di dalam area saat Start()");
-                OnTriggerEnter(hit);
-                break;
-            }
-        }
     }
 
     private void Update()
@@ -71,18 +53,13 @@ public class DoorInteraction : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!enabled) return;
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Trigger Enter: " + other.name);
             player = other.transform;
             isNearby = true;
 
             if (interactUI != null)
-            {
                 interactUI.SetActive(true);
-                Debug.Log("UI AKTIF!");
-            }
 
             UpdateUI();
         }
@@ -90,9 +67,6 @@ public class DoorInteraction : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (!enabled) return;
-        Debug.Log("Trigger Exit: " + other.name);
-
         if (other.CompareTag("Player"))
         {
             isNearby = false;
@@ -119,17 +93,47 @@ public class DoorInteraction : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
         {
             if (selectedIndex == 0)
-            {
-                if (Application.CanStreamedLevelBeLoaded(targetSceneName))
-                    SceneManager.LoadScene(targetSceneName);
-                else
-                    Debug.LogError($"Scene '{targetSceneName}' belum ditambahkan ke Build Settings!");
-            }
+                ExecuteDoorAction();
             else
             {
-                interactUI.SetActive(false);
+                if (interactUI != null)
+                    interactUI.SetActive(false);
                 isNearby = false;
             }
+        }
+    }
+
+    private void ExecuteDoorAction()
+    {
+        string currentScene = SceneManager.GetActiveScene().name;
+        bool sameScene = string.IsNullOrEmpty(targetSceneName) || targetSceneName == currentScene;
+
+        if (!sameScene)
+        {
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.lastDoorID = doorID;
+                Debug.Log($"[DoorInteraction] lastDoorID set = {doorID}");
+            }
+
+            SceneManager.LoadScene(targetSceneName);
+        }
+        else
+        {
+            // --- Perbaikan: API baru ---
+            DoorSpawn[] spawns = Object.FindObjectsByType<DoorSpawn>(FindObjectsSortMode.None);
+
+            foreach (var ds in spawns)
+            {
+                if (ds.doorID == doorID)
+                {
+                    if (GameManager.Instance != null)
+                        GameManager.Instance.TeleportPlayerTo(ds);
+                    return;
+                }
+            }
+
+            Debug.LogWarning($"[DoorInteraction] DoorSpawn dengan ID '{doorID}' tidak ditemukan.");
         }
     }
 
@@ -137,6 +141,7 @@ public class DoorInteraction : MonoBehaviour
     {
         if (option1Text != null)
             option1Text.text = (selectedIndex == 0 ? "> Masuk" : "  Masuk");
+
         if (option2Text != null)
             option2Text.text = (selectedIndex == 1 ? "> Batal" : "  Batal");
     }
@@ -144,6 +149,7 @@ public class DoorInteraction : MonoBehaviour
     private void FaceUIToCamera()
     {
         if (interactUI == null) return;
+
         Camera cam = Camera.main;
         if (cam == null) return;
 
