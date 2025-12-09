@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: cbe86c00d48df3145b07892291000bd7
+guid: ff73bff863222af4daba0139467b5e9e
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Kerdusnya
-    second: {fileID: 2100000, guid: f4eb5e1568366764f9ef53c43834b858, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

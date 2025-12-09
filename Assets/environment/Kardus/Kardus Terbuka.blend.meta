@@ -3,7 +3,12 @@ guid: 262bcf650f22e5e4580110029f48b13b
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Kerdusnya
+    second: {fileID: 2100000, guid: 8efd077fcb09dfe4c90cdc12f435268e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

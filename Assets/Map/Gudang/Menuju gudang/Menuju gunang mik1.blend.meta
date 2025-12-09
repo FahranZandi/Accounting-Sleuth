@@ -3,7 +3,12 @@ guid: 267515725bb314041a73e19d03d320ef
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seng
+    second: {fileID: 2100000, guid: 11bd3dc953d221648a592be104c95155, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
