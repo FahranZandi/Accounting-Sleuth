@@ -20,7 +20,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Map/Sekolah/Ruangan/Kelas 2/Kelas2.unity
     guid: 6e850f807fbdd2b45be15d6e7432ed30
+  - enabled: 1
+    path: Assets/Map/Rumah/Ruang tengah dan tamu/Ruang tengah dan tamu.unity
+    guid: aa78e7825b710864d85a59d1e3678ce0
+  - enabled: 1
+    path: Assets/Map/Rumah Ke sekolah/Desa - perjalan1/Desa - Perjalanan 1.unity
+    guid: c1336ce8b518aa64e8c16e45b410c5a5
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: d43cef23f592df6479ae733bd8597495, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 7590badd002c7da418abb74addfa3eb7, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
