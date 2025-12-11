@@ -6,26 +6,26 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-    path: Assets/Map/Sekolah/Ruangan/Kelas 1/Kelas1.unity
-    guid: 8ca52caa50a2eb34ebfb9ca300a37e5d
-  - enabled: 1
     path: Assets/Map/Rumah/kamar/Ruang kamar.unity
     guid: 1b7637fb95095aa41858b5e254317636
-  - enabled: 1
-    path: Assets/Map/Sekolah/Gedung 2/Lantai 2/Jalur Utama lantai 2.unity
-    guid: 570a979a46a7b1e4fb292a2e3a761102
-  - enabled: 1
-    path: Assets/Map/Sekolah/Ruangan/Kelas 2/Kelas2.unity
-    guid: 6e850f807fbdd2b45be15d6e7432ed30
   - enabled: 1
     path: Assets/Map/Rumah/Ruang tengah dan tamu/Ruang tengah dan tamu.unity
     guid: aa78e7825b710864d85a59d1e3678ce0
   - enabled: 1
     path: Assets/Map/Rumah Ke sekolah/Desa - perjalan1/Desa - Perjalanan 1.unity
     guid: c1336ce8b518aa64e8c16e45b410c5a5
+  - enabled: 1
+    path: Assets/Map/Sekolah/Ruangan/Kelas 1/Kelas1.unity
+    guid: 8ca52caa50a2eb34ebfb9ca300a37e5d
+  - enabled: 1
+    path: Assets/Map/Sekolah/Gedung 2/Lantai 2/Jalur Utama lantai 2.unity
+    guid: 570a979a46a7b1e4fb292a2e3a761102
+  - enabled: 1
+    path: Assets/Map/Sekolah/Ruangan/Kelas 2/Kelas2.unity
+    guid: 4b143a3a682c9aa48a0cc283717e7c63
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: d43cef23f592df6479ae733bd8597495, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 7590badd002c7da418abb74addfa3eb7, type: 2}
