@@ -855,6 +855,67 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.020057697, y: 0.022634335, z: 0.02095149}
   m_Center: {x: -0.000028844006, y: -0.0013171668, z: 0.010475744}
+--- !u!1001 &157306955
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5a3053e99365c0e4a8e657e6e4805ca1, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a3053e99365c0e4a8e657e6e4805ca1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 33.51
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a3053e99365c0e4a8e657e6e4805ca1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a3053e99365c0e4a8e657e6e4805ca1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.68
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a3053e99365c0e4a8e657e6e4805ca1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.50008726
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a3053e99365c0e4a8e657e6e4805ca1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.49991274
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a3053e99365c0e4a8e657e6e4805ca1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.50008726
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a3053e99365c0e4a8e657e6e4805ca1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.49991274
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a3053e99365c0e4a8e657e6e4805ca1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a3053e99365c0e4a8e657e6e4805ca1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5a3053e99365c0e4a8e657e6e4805ca1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5a3053e99365c0e4a8e657e6e4805ca1, type: 3}
+      propertyPath: m_Name
+      value: Tembok
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5a3053e99365c0e4a8e657e6e4805ca1, type: 3}
 --- !u!1 &179493247 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 99a84df3c15bd404fbe82ccbb894e3ff, type: 3}
@@ -957,66 +1018,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 728639488}
   m_SourcePrefab: {fileID: 100100000, guid: 52f6d50ea54345a40894dbb5133235c7, type: 3}
---- !u!1001 &199270223
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 38.73
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.82
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.67
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_Name
-      value: Tembok kamar mk1 (11)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1836071993}
-  m_SourcePrefab: {fileID: 100100000, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
 --- !u!1001 &218016627
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1676,152 +1677,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.020000001, y: 0.020000001, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &401145875
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39.41
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.82
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.67
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_Name
-      value: Tembok kamar mk1 (13)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2001945207}
-  m_SourcePrefab: {fileID: 100100000, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
---- !u!1001 &405251916
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39.04
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.82
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.67
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_Name
-      value: Tembok kamar mk1 (15)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 405251918}
-  m_SourcePrefab: {fileID: 100100000, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
---- !u!1 &405251917 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-  m_PrefabInstance: {fileID: 405251916}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &405251918
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 405251917}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020000001, y: 0.020000001, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,92 +1888,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -462981019419857548, guid: 41866ee10c5c43547a9c12875bceee67, type: 3}
---- !u!1001 &430357399
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 38.39
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.82
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.67
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_Name
-      value: Tembok kamar mk1 (17)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 430357401}
-  m_SourcePrefab: {fileID: 100100000, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
---- !u!1 &430357400 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-  m_PrefabInstance: {fileID: 430357399}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &430357401
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 430357400}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020000001, y: 0.020000001, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &431893805
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3196,66 +2965,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d91f5b39a67ef142877fa7f61d82407, type: 3}
---- !u!1001 &677721841
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 40.17
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.82
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.67
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_Name
-      value: Tembok kamar mk1 (10)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1822641626}
-  m_SourcePrefab: {fileID: 100100000, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
 --- !u!1 &728639487 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 52f6d50ea54345a40894dbb5133235c7, type: 3}
@@ -3282,92 +2991,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.13357376, y: 0.2933948, z: 0.33430627}
   m_Center: {x: -0.050075155, y: -0.051518578, z: -0.85149497}
---- !u!1001 &729996247
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39.29
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.82
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.67
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_Name
-      value: Tembok kamar mk1 (19)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 729996249}
-  m_SourcePrefab: {fileID: 100100000, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
---- !u!1 &729996248 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-  m_PrefabInstance: {fileID: 729996247}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &729996249
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 729996248}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020000001, y: 0.020000001, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &737859941 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 27a3e37e8aaaee748a272c0a09ff1446, type: 3}
@@ -3503,66 +3126,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36fc115b53fe3124bb7167305ac0a124, type: 3}
---- !u!1001 &817148642
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39.09
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.82
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.67
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_Name
-      value: Tembok kamar mk1 (12)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1650843101}
-  m_SourcePrefab: {fileID: 100100000, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
 --- !u!1001 &818497459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3745,92 +3308,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec638ea3cd88ef246a867f80d396c731, type: 3}
---- !u!1001 &849234571
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 37.84
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.82
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.67
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_Name
-      value: Tembok kamar mk1 (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 849234573}
-  m_SourcePrefab: {fileID: 100100000, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
---- !u!1 &849234572 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-  m_PrefabInstance: {fileID: 849234571}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &849234573
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849234572}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020000001, y: 0.020000001, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &850601117 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
@@ -4339,92 +3816,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &968849421
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 38.61
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.82
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.67
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_Name
-      value: Tembok kamar mk1 (20)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 968849423}
-  m_SourcePrefab: {fileID: 100100000, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
---- !u!1 &968849422 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-  m_PrefabInstance: {fileID: 968849421}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &968849423
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 968849422}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020000001, y: 0.020000001, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &974130220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6475,92 +5866,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 5.648427, y: 3.2904384, z: 4.721024}
   m_Center: {x: 0.16123533, y: -1.1111878, z: -0.03575921}
---- !u!1001 &1520091906
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39.72
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.82
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.67
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_Name
-      value: Tembok kamar mk1 (16)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1520091908}
-  m_SourcePrefab: {fileID: 100100000, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
---- !u!1 &1520091907 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-  m_PrefabInstance: {fileID: 1520091906}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1520091908
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1520091907}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020000001, y: 0.020000001, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1527006605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6903,32 +6208,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1395632597}
   m_SourcePrefab: {fileID: 100100000, guid: 27a3e37e8aaaee748a272c0a09ff1446, type: 3}
---- !u!1 &1650843100 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-  m_PrefabInstance: {fileID: 817148642}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1650843101
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1650843100}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020000001, y: 0.020000001, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1658692579
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7370,92 +6649,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dc4048abc2483742aced621b5cde7c0, type: 3}
---- !u!1001 &1744564297
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 39.07
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.82
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.67
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      propertyPath: m_Name
-      value: Tembok kamar mk1 (18)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1744564299}
-  m_SourcePrefab: {fileID: 100100000, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
---- !u!1 &1744564298 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-  m_PrefabInstance: {fileID: 1744564297}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1744564299
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1744564298}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020000001, y: 0.020000001, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1747821567 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 503f5496fb83e0547992357322c6e4f0, type: 3}
@@ -7711,32 +6904,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.010000002, y: 0.0057133716, z: 0.010116005}
   m_Center: {x: -6.9849193e-10, y: -0.0028566858, z: 0.004057999}
---- !u!1 &1822641625 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-  m_PrefabInstance: {fileID: 677721841}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1822641626
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1822641625}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020000001, y: 0.020000001, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1832920261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7813,32 +6980,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 516973191}
   m_SourcePrefab: {fileID: 100100000, guid: 27a3e37e8aaaee748a272c0a09ff1446, type: 3}
---- !u!1 &1836071992 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-  m_PrefabInstance: {fileID: 199270223}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1836071993
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836071992}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020000001, y: 0.020000001, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1837397612
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8483,32 +7624,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0092289485, y: 0.019110318, z: 0.017533928}
   m_Center: {x: 0.0000000041392116, y: -0.0005990052, z: 0.0077250414}
---- !u!1 &2001945206 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 67a45fdf310322c4fafd678210ddcb96, type: 3}
-  m_PrefabInstance: {fileID: 401145875}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &2001945207
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001945206}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.020000001, y: 0.020000001, z: 0}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2030476193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8974,18 +8089,7 @@ SceneRoots:
   - {fileID: 1908047686}
   - {fileID: 394940401}
   - {fileID: 378668767}
-  - {fileID: 849234571}
-  - {fileID: 677721841}
   - {fileID: 544401439}
-  - {fileID: 199270223}
-  - {fileID: 405251916}
-  - {fileID: 1520091906}
-  - {fileID: 1744564297}
-  - {fileID: 430357399}
-  - {fileID: 968849421}
-  - {fileID: 729996247}
-  - {fileID: 817148642}
-  - {fileID: 401145875}
   - {fileID: 564885967}
   - {fileID: 31620632}
   - {fileID: 666514814}
@@ -9040,3 +8144,4 @@ SceneRoots:
   - {fileID: 2070381517}
   - {fileID: 1108993316}
   - {fileID: 803320480}
+  - {fileID: 157306955}
