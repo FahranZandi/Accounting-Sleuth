@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Map/Rumah Ke sekolah/Desa - perjalan1/Desa - Perjalanan 1.unity
     guid: c1336ce8b518aa64e8c16e45b410c5a5
   - enabled: 1
+    path: Assets/Map/Sekolah/Pagar depan/Pagar depan sekolah.unity
+    guid: 0e756844bf2b3ce41856a3fc57098195
+  - enabled: 1
     path: Assets/Map/Sekolah/Ruangan/Kelas 1/Kelas1.unity
     guid: 8ca52caa50a2eb34ebfb9ca300a37e5d
   - enabled: 1
